@@ -4,10 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>About Drew</title>
+    <style>
+        /* Styled table for a simple site overview */
+        .info-table { width:100%; max-width:760px; margin:12px auto; border-collapse:collapse; box-shadow:0 6px 20px rgba(0,0,0,0.06); border-radius:8px; overflow:hidden; }
+        .info-table caption { text-align:left; font-weight:700; padding:12px 16px; background:linear-gradient(180deg,#fff,#fafafa); }
+        .info-table th, .info-table td { padding:12px 16px; border-bottom:1px solid #eee; text-align:left; }
+        .info-table thead th { background:#f3f4f6; font-weight:600; }
+        .info-table tbody tr:nth-child(odd) { background:#fff; }
+        .info-table tbody tr:nth-child(even) { background:#fbfbfb; }
+        @media (max-width:520px) { .info-table th, .info-table td { padding:10px; font-size:14px; } }
+    </style>
 </head>
 <body>
     <div class = "container">
-
     </div>
     <header>
         <h1>Drew Peterson</h1>
@@ -37,6 +46,32 @@
                 </h5>
         </section>
     </main>
+
+    <div class = "container">
+        <table class="info-table" aria-label="Site overview">
+            <caption>Site overview</caption>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>About</td>
+                    <td>Short bio and background information</td>
+                </tr>
+                <tr>
+                    <td>Photos</td>
+                    <td>Family and friends photos — see the Photos page</td>
+                </tr>
+                <tr>
+                    <td>Favorites</td>
+                    <td>Movies and other interests listed on the site</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <footer>
         <p>© Drew's Personal Website</p>
